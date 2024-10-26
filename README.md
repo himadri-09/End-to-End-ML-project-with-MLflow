@@ -1,6 +1,6 @@
 # End-to-end-Machine-Learning-Project-with-MLflow
 
-This project predicts wine quality based on various chemical properties using machine learning techniques. It focuses on creating structured, modular, and object-oriented Python code with seamless deployment pipelines. The project also incorporates MLflow for experiment tracking, CI/CD, Flask for a web application, and deployment on AWS.
+This project predicts wine quality based on various chemical properties using machine learning techniques. It focuses on creating structured, modular, and object-oriented Python code with seamless deployment pipelines. The project also incorporates MLflow for experiment tracking, CI/CD, Flask for a web application, MLOps , and deployment on AWS.
 
 ## Project Goal
 
