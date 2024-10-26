@@ -1,5 +1,42 @@
 # End-to-end-Machine-Learning-Project-with-MLflow
 
+This project predicts wine quality based on various chemical properties using machine learning techniques. It focuses on creating structured, modular, and object-oriented Python code with seamless deployment pipelines. The project also incorporates MLflow for experiment tracking, CI/CD, Flask for a web application, and deployment on AWS.
+
+## Project Goal
+Demonstrate: Structured and modular code organization
+Use: Python, MLflow, Flask, CI/CD, and AWS
+Build: An end-to-end machine learning pipeline from data ingestion to deployment
+## Project Structure and Process
+The project is divided into multiple stages, with each component being modular and reusable. Below is a summary of the main stages:
+
+1. Folder Template Creation
+Organizes project structure with directories for data, scripts, logs, model artifacts, and documentation.
+2. Environment Setup & Requirements Installation
+Sets up the virtual environment and installs dependencies listed in requirements.txt.
+3. Logger & Utilities Setup
+Establishes a custom logger to track activities and errors.
+Implements reusable utility functions for data processing, error handling, and configuration management.
+4. Data Ingestion
+Loads data from a reliable source, cleans, and stores it in the project directory.
+Splits data into training and test sets for the modeling stage.
+5. Data Validation
+Checks for data integrity and ensures there are no anomalies or missing values.
+6. Data Transformation
+Processes data, including feature scaling and encoding, to prepare it for training.
+7. Model Training
+Trains machine learning models using scikit-learn and tunes hyperparameters.
+Tracks all experiments, models, and metrics with MLflow.
+8. MLflow Experiment Tracking
+Logs experiments, tracks model parameters, and stores results using MLflow for reproducibility.
+9. Prediction Pipeline
+Creates an end-to-end pipeline that loads a trained model and predicts wine quality for new inputs.
+10. Flask Web App
+Develops a user-friendly Flask web interface to interact with the prediction pipeline.
+11. CI/CD Pipeline
+Implements CI/CD using GitHub Actions or any other preferred CI/CD tool.
+Tests, builds, and deploys the model to ensure a streamlined development workflow.
+12. AWS Deployment
+Deploys the Flask web application on AWS EC2 for scalability and production use.
 
 ## Workflows
 
@@ -65,7 +102,7 @@ open up you local host and port
 
 MLFLOW_TRACKING_URI=https://dagshub.com/himadri-09/End-to-End-ML-project-with-MLflow.mlflow \
 MLFLOW_TRACKING_USERNAME=himadri-09 \
-MLFLOW_TRACKING_PASSWORD=3ca6b3b0fca1e2b8fb59a02db0fea314f3e65bed \
+MLFLOW_TRACKING_PASSWORD=*your access key* \
 python script.py
 
 Run this to export as env variables:
@@ -76,7 +113,7 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/himadri-09/End-to-End-ML-project-
 
 export MLFLOW_TRACKING_USERNAME=himadri-09
 
-export MLFLOW_TRACKING_PASSWORD=3ca6b3b0fca1e2b8fb59a02db0fea314f3e65bed
+export MLFLOW_TRACKING_PASSWORD=*your access key*
 
 ```
 
@@ -115,7 +152,7 @@ export MLFLOW_TRACKING_PASSWORD=3ca6b3b0fca1e2b8fb59a02db0fea314f3e65bed
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 257394448208.dkr.ecr.us-east-1.amazonaws.com/mlproject-with-mlflow
+    - Save the URI: your aws ecr repo uri
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
@@ -151,9 +188,9 @@ export MLFLOW_TRACKING_PASSWORD=3ca6b3b0fca1e2b8fb59a02db0fea314f3e65bed
 
     AWS_REGION = us-east-1
 
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+    AWS_ECR_LOGIN_URI = demo>>  your aws ecr repo uri
 
-    ECR_REPOSITORY_NAME = simple-app
+    ECR_REPOSITORY_NAME = ecr repo name
 
 
 
