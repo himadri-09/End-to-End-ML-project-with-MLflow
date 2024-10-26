@@ -17,7 +17,7 @@ This project predicts wine quality based on various chemical properties using ma
 ![Form to Take Information](templates/form_input.png)
 
 ### 3. Result Page
-![Result Page](templates/result_page.png.png)
+![Result Page](templates/result_page.png)
 
 ## Project Structure and Process
 
