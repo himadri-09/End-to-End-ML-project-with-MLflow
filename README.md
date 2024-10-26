@@ -8,6 +8,17 @@ This project predicts wine quality based on various chemical properties using ma
 - **Use**: Python, MLflow, Flask, CI/CD, and AWS
 - **Build**: An end-to-end machine learning pipeline from data ingestion to deployment
 
+## Project Overview
+
+### 1. First Page
+![First Page](templates/First_front.png)
+
+### 2. Form to Take Information
+![Form to Take Information](templates/form_input.png)
+
+### 3. Result Page
+![Result Page](templates/result_page.png.png)
+
 ## Project Structure and Process
 
 The project is divided into multiple stages, with each component being modular and reusable. Below is a summary of the main stages:
